@@ -1,0 +1,106 @@
+/*
+1. Selector por etiqueta: cambia el estilo a todas las etiquetas en cuestion, se coloca directamente el nombre de la etiqueta
+2. Selector por clase: cambia o modifica el estilo del elemento en donde se mencione la clase en el atributo class para crear un estilo por clase se coloca .nombreEstilo
+3.Selector por identificador es decir por el id, mnodifica el estilo del elemento que posea el id
+4. Selector universal *
+*/
+/**********************************************************************/
+
+/*1. por etiquetas*/
+p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+    background-color: thistle;
+}
+/*
+2.Selector por clase o class
+*/
+
+.subtitulo{
+    text-align: center;
+    color: brown;
+    background-color: bisque;
+}
+/*
+3. Selector por ID:
+*/
+.info{
+    border-radius: 50px;
+    background-color: chocolate;
+    color: azure;
+    padding: 10px;
+}
+
+/*
+4. Selector por atributo
+*/
+
+[class]{
+
+/* Se aplicara a todos los elementos o etiquetas ue tengan atributo class*/
+    background-color: burlywood;
+}
+
+/* Combinadores */
+
+a[href]{
+    text-align: center;
+    margin: 1%;
+    color: #590202;
+}
+
+/* Utilizando sufijos*/
+a[href$=".com"]{
+    margin-left: 3%;
+    color: blue;
+}
+
+/* Utilizando prefijos
+*/
+[class^="as"]{
+    font-size: 25px;
+}
+
+/*
+1. Hacer un ejemplo con el combinador donde se selccione el hermano siguiente
+2. combinador donde se selecciones todos los hermanos siguientes
+3. Un ejemplo de agrupacion de selectores
+4. Ejemplo de descendencia directa y selectores hijos directos
+*/
+
+.sol{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+/* Con el combinador adyacentes se seleccina el siguiente despues de la etiqueta section y se marca de color aqua */
+
+
+
+section + p{
+    background-color: aqua;
+}
+
+
+
+/* En el combinador general se selecciona todos los elementos siguientes despues de el elemento div */
+
+div ~ ul {
+    background-color: #84ab;
+    border-radius: 50px;
+}
+
+
+
+/* En el selector multiple se indica a que elementos de html se le va asignar el atributo en los elementos div*/
+
+h3 p {
+    background-color: #93fa85;
+    font-size: 15%;
+}
+
+
+
+/* En este vamos a seleccionar directamente los descendientes y los hijos directamente*/
+
